@@ -1,18 +1,18 @@
 {
-    "name": "roux",
+    "name": "rouxter",
     "version": "0.0.1",
     "description": "URL Router with constraints and variables",
     "keywords": [ "route", "router" ],
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tmont/roux.git"
+        "url": "https://github.com/tmont/rouxter.git"
     },
 
     "scripts": {
         "test": "node_modules/.bin/mocha -R dot tests && node_modules/.bin/karma start --single-run ",
-        "compile": "node_modules/.bin/browserify --no-builtins --entry index.js --standalone Roux --detect-globals false > dist/roux.js",
-        "minify": "node_modules/.bin/uglifyjs --screw-ie8 --compress --mangle -- dist/roux.js > dist/roux.min.js",
+        "compile": "node_modules/.bin/browserify --no-builtins --entry index.js --standalone Rouxter --detect-globals false > dist/rouxter.js",
+        "minify": "node_modules/.bin/uglifyjs --screw-ie8 --compress --mangle -- dist/rouxter.js > dist/rouxter.min.js",
         "build": "npm run compile && npm run minify"
     },
 

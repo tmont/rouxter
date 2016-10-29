@@ -1,35 +1,39 @@
-# roux
+# rouxter
+
+[![Build Status](https://travis-ci.org/tmont/rouxter.svg?branch=master)](https://travis-ci.org/tmont/rouxter)
+[![NPM version](https://img.shields.io/npm/v/rouxter.svg)](https://www.npmjs.com/package/rouxter)
 
 A simple URL router for the client or server. Supports
 case sensitivity, route value constraints and wildcards.
 
 Smallish (~1.3KB gzipped) with no dependencies.
 
-`roux` is pronounced `ROO`. Yelling is optional.
+`rouxter` is pronounced `ROOTER`. Yelling is optional. `roux` was already taken
+and I'm not very clever.
 
 ## Installation
 ### Server
 ```bash
-npm install roux
+npm install rouxter
 ```
 
 ### Client
 The client version is built using 
 [browserify](https://github.com/substack/node-browserify). It is
-located at [dist/roux.js](dist/roux.js). If you want to minify it,
+located at [dist/rouxter.js](dist/rouxter.js). If you want to minify it,
 clone the repo and run `npm run minify`, or use your own favored
 flavor of minification.
 
 ```html
-<script src="/path/to/roux.js"></script>
+<script src="/path/to/rouxter.js"></script>
 ```
 
 ## Usage
-Note that on the client, there is a global `Roux` variable
+Note that on the client, there is a global `Rouxter` variable
 attached to the window.
 
 ```javascript
-const Route = require('roux').Route; //window.Roux.Route on the client
+const Route = require('rouxter').Route; //window.Rouxter.Route on the client
 
 //configuring routes
 const myRoutes = {
