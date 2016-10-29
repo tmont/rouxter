@@ -1,0 +1,32 @@
+{
+    "name": "roux",
+    "version": "0.0.1",
+    "description": "URL Router with constraints and variables",
+    "keywords": [ "route", "router" ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tmont/roux.git"
+    },
+
+    "scripts": {
+        "test": "node_modules/.bin/mocha -R dot tests && node_modules/.bin/karma start --single-run ",
+        "compile": "node_modules/.bin/browserify --no-builtins --entry index.js --standalone Roux --detect-globals false > dist/roux.js",
+        "minify": "node_modules/.bin/uglifyjs --screw-ie8 --compress --mangle -- dist/roux.js > dist/roux.min.js",
+        "build": "npm run compile && npm run minify"
+    },
+
+    "devDependencies": {
+        "browserify": "13.1.1",
+        "expect.js": "0.3.1",
+        "karma": "1.3.0",
+        "karma-browserify": "5.1.0",
+        "karma-mocha": "1.2.0",
+        "karma-phantomjs-launcher": "1.0.2",
+        "mocha": "3.1.2",
+        "phantomjs-prebuilt": "2.1.13",
+        "sinon": "1.17.6",
+        "uglify-js": "2.7.4",
+        "watchify": "3.7.0"
+    }
+}
