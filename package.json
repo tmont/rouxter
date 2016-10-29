@@ -1,6 +1,6 @@
 {
     "name": "rouxter",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "URL Router with constraints and variables",
     "keywords": [ "route", "router" ],
     "license": "MIT",
